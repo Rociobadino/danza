@@ -1,11 +1,12 @@
 import React from 'react'
 import CartWidget from './CartWidget'
+import { Link } from "react-router-dom"
 
 const NavBar = () => {
   return (
     <div className="navbar bg-base-100">
     <div className="flex-1">
-      <a className="btn btn-ghost normal-case text-xl">DANCE</a>
+      <Link to= '/' className="btn btn-ghost normal-case text-xl">DANCE</Link>
     </div>
     <CartWidget></CartWidget>
     <div className="flex-none gap-2">
@@ -20,12 +21,12 @@ const NavBar = () => {
         </label>
         <ul tabIndex={0} className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
           <li>
-            <a className="justify-between">
-              Profile
-              <span className="badge">New</span>
-            </a>
+            <Link to='/bailarines' className="justify-between">
+              Bailarines
+              {/* <span className="badge">New</span> */}
+            </Link>
           </li>
-          <li><a>Settings</a></li>
+          <li><a>Habilidades</a></li>
           <li><a>Logout</a></li>
         </ul>
       </div>
