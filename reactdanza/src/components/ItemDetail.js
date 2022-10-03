@@ -13,7 +13,7 @@ const ItemDetail = () => {
    const [item, setItem] = useState()
 
    useEffect(() => {
-    getItemDetails.then ( response => {
+    getItemDetails().then ( response => {
         setItem(response)
 
     })
@@ -21,14 +21,14 @@ const ItemDetail = () => {
 
    const getItemDetails = () => {
 
-     return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(bailarines.find (b => b.id === Number(itemId)))
+    return new Promise((resolve) => {
+       setTimeout(() => {
+           resolve(bailarines.find (b => b.id === Number(itemId)))
 
-        },2000);
-    })
+       },2000);
+   })
 
-   }
+  }
    
   return (
     
