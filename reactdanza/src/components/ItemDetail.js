@@ -9,8 +9,8 @@ import { bailarines } from './ItemList'
 const ItemDetail = () => {
 
    const {id : itemId} = useParams ()
-
-   const [item, setItem] = useState()
+  
+   const [item, setItem] = useState({})
 
    useEffect(() => {
     getItemDetails().then ( response => {
