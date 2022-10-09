@@ -1,6 +1,7 @@
 import React from 'react'
 import CartWidget from './CartWidget'
 import { Link } from "react-router-dom"
+import imgdance from './imagenes/imgdance.jpg';
 
 const NavBar = () => {
   return (
@@ -16,7 +17,7 @@ const NavBar = () => {
       <div className="dropdown dropdown-end">
         <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
           <div className="w-10 rounded-full">
-            <img src="https://placeimg.com/80/80/people" />
+            <img src={imgdance} />
           </div>
         </label>
         <ul tabIndex={0} className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">

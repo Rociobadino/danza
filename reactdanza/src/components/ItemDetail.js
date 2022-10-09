@@ -33,9 +33,17 @@ const ItemDetail = () => {
   return (
     
     <>
-    <div>{item.name}</div>
-    <div>{item.edad}</div>
-    <div>{item.habilidad}</div>
+    <div>
+    <div className='flexContainer2'>
+    <div className='flexCaja2'>
+    <div className='centrar'>{item.name}</div>
+    <div className='centrar'> Edad:</div>
+    <div className='centrar'>{item.edad}</div>
+    <div className='centrar'> Habilidad:</div>
+    <div className='centrar'>{item.habilidad}</div>
+    </div>
+    </div>
+    </div>
     </>
 
   )

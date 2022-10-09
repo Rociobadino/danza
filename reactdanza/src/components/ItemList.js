@@ -37,7 +37,7 @@ const getBailarines = () => {
 
   return (
     <div>
-        <h1> BAILARINES </h1>
+        <h1 className='centrar'> BAILARINES </h1>
         {items.map(item => <ItemCard key={item.id} {...item}/>)}
     </div>
   )
